@@ -98,6 +98,7 @@ img {
   background-color: var(--accent-color);
   border-radius: 4px;
   padding: 10px 32px 10px 32px;
+  margin-top: 30px;
 }
 .btn-light {
   color: var(--primary-white-color);
@@ -202,6 +203,8 @@ img {
 /* --------------------SECTION-------------------- */
 .section-features {
   display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section-title {
   font-weight: bold;
