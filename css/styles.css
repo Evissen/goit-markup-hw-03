@@ -126,7 +126,10 @@ img {
   border-radius: 4px;
   color: var(--primary-white-color);
 }
-
+.portfolio-nav {
+  display: flex;
+  padding: 6px auto 6px auto;
+}
 /* --------------------HEADER-------------------- */
 .header {
   border-bottom: 1px solid #ececec;
@@ -147,6 +150,9 @@ img {
 .header-connect {
   display: flex;
   margin-left: auto;
+}
+.header-connect :not(:last-child) {
+  margin-right: 50px;
 }
 .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -179,7 +185,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  margin-right: 50px;
 }
 .header-mail:hover,
 .header-mail:focus {
@@ -221,32 +226,30 @@ img {
 }
 .section-text {
   margin-top: 10px;
-  margin-right: 30px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.section-text:last-child {
+
+.section-title-text:last-child {
   margin-right: 0;
 }
-
+.section-title-text {
+  width: 270px;
+  margin-right: 30px;
+}
 /* --------------------DESC-------------------- */
 .desc-img {
   display: flex;
-  justify-content: center;
 }
-.desc-img-item {
+.desc-img-item:not(:last-child) {
   margin-right: 30px;
 }
-.desc-img-title {
+.desc-img-title:not(:last-child) {
   margin-right: 30px;
 }
-.desc-img-title:last-child {
-  margin-right: 0;
-}
-
 .desc-title {
   font-weight: bold;
   font-size: 36px;
@@ -264,6 +267,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-top: 10px;
 }
 .desc-title-text {
   font-weight: 500;
@@ -272,14 +276,16 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 .desc-img-border {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  border-bottom: 30px solid #ffffff;
+  border-bottom: solid #ffffff;
+}
+.desc-person {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* --------------------FOOTER-------------------- */
@@ -297,7 +303,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
   margin-top: 20px;
 }
 .footer-mail {
@@ -322,8 +327,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.footer-connect:first-child {
-  margin-bottom: 9px;
+.footer-connect {
+  margin-top: 9px;
 }
 /* --------------------PORTFOLIO-------------------- */
 
