@@ -202,10 +202,14 @@ img {
 }
 
 /* --------------------SECTION-------------------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-features {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+  align-items: center;
 }
 .section-title {
   font-weight: bold;
@@ -227,14 +231,14 @@ img {
 .section-text:last-child {
   margin-right: 0;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 /* --------------------DESC-------------------- */
 .desc-img {
   display: flex;
+  justify-content: center;
+}
+.desc-img-item {
+  margin-right: 30px;
 }
 .desc-img-title {
   margin-right: 30px;
@@ -242,6 +246,7 @@ img {
 .desc-img-title:last-child {
   margin-right: 0;
 }
+
 .desc-title {
   font-weight: bold;
   font-size: 36px;
@@ -283,14 +288,17 @@ img {
   background-color: var(--background-section-color);
   padding: 60px 0;
   display: flex;
+  align-items: center;
 }
 
-.address {
+.footer-address {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
+  margin-top: 20px;
 }
 .footer-mail {
   font-weight: normal;
@@ -313,6 +321,9 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+.footer-connect:first-child {
+  margin-bottom: 9px;
 }
 /* --------------------PORTFOLIO-------------------- */
 
